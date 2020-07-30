@@ -5,13 +5,29 @@
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#436280",
       "link_extra": {
-        "text": "Teste",
-        "url": "pudim.com.br"
+        "text": "",
+        "url": ""
       },
       "videos": [
         {
           "titulo": "Estudos da UFSCar utilizam lógica e matemática na análise do Português falado no Brasil",
           "url": "https://youtu.be/ORcpF7jMduQ?list=FLO64QVnEzOnpZMjD5wYM61Q"
+        },
+        {
+          "titulo": "Syntactic Trees and X' Theory",
+          "url": "https://youtu.be/7UOcoQr0hvg"
+        },
+        {
+          "titulo": "Syntactic Trees and X' Theory",
+          "url": "https://youtu.be/7UOcoQr0hvg"
+        },
+        {
+          "titulo": "Syntactic Trees and X' Theory",
+          "url": "https://youtu.be/7UOcoQr0hvg"
+        },
+        {
+          "titulo": "Syntactic Trees and X' Theory",
+          "url": "https://youtu.be/7UOcoQr0hvg"
         },
         {
           "titulo": "Syntactic Trees and X' Theory",
