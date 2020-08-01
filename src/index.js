@@ -5,6 +5,7 @@ import './index.css';
 import Home from './Pages/Home/App'
 import CadastroVideo from './Pages/Cadastro/Video'
 import CadastroCategoria from './Pages/Cadastro/Categoria';
+import About from './Pages/About/about';
 
 import {
   Switch,
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route path="/about" component={About} />
       <Route component={pagina404} />
     </Switch>
   </Router>,
