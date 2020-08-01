@@ -3,7 +3,7 @@ import PageDefault from '../../Components/PageDefault'
 import randomColor from 'randomcolor'
 
 function About() {
-  const [count, setCount] = useState(() => (5))
+  const [count, setCount] = useState(() => (0))
   const [color, setColor] = useState(null)
   useEffect(() => {
     setColor(randomColor())
@@ -17,6 +17,8 @@ function About() {
       <span>{count}</span>
 
       <button onClick={() => setCount(currentCount => currentCount + 1)}> Adicionar </button>
+
+      <button onClick={() => setCount(0)}> Resetar </button>
     </PageDefault>
   )
 }
