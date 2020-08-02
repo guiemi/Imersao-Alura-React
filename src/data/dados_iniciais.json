@@ -1,9 +1,9 @@
 {
   "categorias": [
     {
-      "titulo": "Sintaxe e Semântica Formal",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#436280",
+      "titulo": "Sintaxe",
+      "link": "",
+      "cor": "#48466d",
       "link_extra": {
         "text": "",
         "url": ""
@@ -14,20 +14,20 @@
           "url": "https://youtu.be/ORcpF7jMduQ?list=FLO64QVnEzOnpZMjD5wYM61Q"
         },
         {
-          "titulo": "Syntactic Trees and X' Theory",
-          "url": "https://youtu.be/7UOcoQr0hvg"
+          "titulo": "How Complex is Natural Language? The Chomsky Hierarchy",
+          "url": "https://youtu.be/5-uOijZ5mRo?list=PLfLdA1jGDSu5fj9aEl46r0WcwYbsb_hwx"
         },
         {
-          "titulo": "Syntactic Trees and X' Theory",
-          "url": "https://youtu.be/7UOcoQr0hvg"
+          "titulo": "What Does Possession Tell Us About Syntax? Determiner Phrases",
+          "url": "https://youtu.be/gWy7QdZJg9E?list=PLfLdA1jGDSu5fj9aEl46r0WcwYbsb_hwx"
         },
         {
-          "titulo": "Syntactic Trees and X' Theory",
-          "url": "https://youtu.be/7UOcoQr0hvg"
+          "titulo": "Generative Syntax 1.3: Constituent Recursion",
+          "url": "https://youtu.be/mO4WQB1BIq0?list=PLNRhI4Cc_QmvBzEBJFiOUfmMR4ew9TFwO"
         },
         {
-          "titulo": "Syntactic Trees and X' Theory",
-          "url": "https://youtu.be/7UOcoQr0hvg"
+          "titulo": "Generative Syntax 4.1: The X-bar Schema",
+          "url": "https://youtu.be/jgRMBykXg4Q?list=PLNRhI4Cc_QmvBzEBJFiOUfmMR4ew9TFwO"
         },
         {
           "titulo": "Syntactic Trees and X' Theory",
@@ -36,112 +36,54 @@
       ]
     },
     {
-      "titulo": "Fonética & Fonologia",
-      "cor": "#436280",
+      "titulo": "Semântica Formal",
+      "cor": "#46cdcf",
       "link_extra": {
-        "text": "Teste 2",
-        "url": "pudim.com.br"
+        "text": "",
+        "url": ""
       },
       "videos": [
         {
-          "titulo": "Fonética Forense é tema de pesquisa na UFSCar",
-          "url": "https://youtu.be/Omn1o6auyhA"
+          "titulo": "Formal semantics and pragmatics: Origins, issues, impact",
+          "url": "https://www.youtube.com/watch?v=TpKpjiS1aic"
+        },
+        {
+          "titulo": "What Makes a Sentence True or False? Predicate Logic",
+          "url": "https://www.youtube.com/watch?v=al5SJSbIyvM&list=PLGxQtVcFDclZ4Tp0Sy3pZTcnaVJxY1J4I&index=4&t=0s"
+        },
+        {
+          "titulo": "The Lambda Calculus, part 1 1 Syntax and semantics",
+          "url": "https://www.youtube.com/watch?v=GYCYq0lEFhE"
+        },
+        {
+          "titulo": "How Can One Greek Letter Help Us Understand Language? Lambda Calculus",
+          "url": "https://youtu.be/BwWQDzXBuwg"
+        },
+        {
+          "titulo": "Estudos da UFSCar utilizam lógica e matemática na análise do Português falado no Brasil",
+          "url": "https://www.youtube.com/watch?v=ORcpF7jMduQ"
         }
       ]
     },
     {
-      "titulo": "General topics",
-      "cor": "#436280",
+      "titulo": "Linguística Computacional (NLP)",
+      "cor": "#3d84a8",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "",
+        "url": ""
       },
       "videos": [
         {
-          "titulo": "Noam Chomsky: Mathematics, Language, and Abstract Objects",
-          "url": "https://www.youtube.com/watch?v=atupfHizJxM"
-        }
-     ]
-    },
-    {
-      "titulo": "Filmes",
-      "cor": "orange",
-      "videos": [
-        {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Natural Language Processing: Crash Course Computer Science #36",
+          "url": "https://youtu.be/fOvTtapxa9c"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Introduction to Computational Linguistics",
+          "url": "https://youtu.be/rwCwJB5UV0g"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        }
-      ]
-    },
-    {
-      "titulo": "Games",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
-      "videos": [
-        {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
-        },
-        {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-        },
-        {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-        },
-        {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-        }
-      ]
-    },
-    {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
-      "videos": [
-        {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
-        },
-        {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
-        },
-        {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        },
-        {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
-        },
-        {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "[Webinar] Computational linguistics",
+          "url": "https://youtu.be/HWZhr2QVu34"
         }
       ]
     }

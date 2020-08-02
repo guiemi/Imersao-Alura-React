@@ -1,20 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import Home from './Pages/Home/App'
-import CadastroVideo from './Pages/Cadastro/Video'
-import CadastroCategoria from './Pages/Cadastro/Categoria';
-import About from './Pages/About/about';
-
 import {
   Switch,
   Route,
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from 'react-router-dom';
+import Home from './Pages/Home/App';
+import CadastroVideo from './Pages/Cadastro/Video';
+import CadastroCategoria from './Pages/Cadastro/Categoria';
+import About from './Pages/About/about';
 
-const pagina404 = () => (<div>Erro 404!</div>)
-
+const pagina404 = () => (<div>Erro 404!</div>);
 ReactDOM.render(
   <Router>
     <Switch>
@@ -26,5 +23,5 @@ ReactDOM.render(
     </Switch>
   </Router>,
 
-  document.getElementById('root')
+  document.getElementById('root'),
 );
