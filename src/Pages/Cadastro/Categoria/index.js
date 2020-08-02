@@ -30,7 +30,7 @@ function CadastroCategoria() {
   useEffect(() => {
     console.log('Hellow Brazeel!');
 
-    const URL_TOP = 'http://localhost:3000/categorias';
+    const URL_TOP = 'https://languageflix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
