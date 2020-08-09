@@ -55,7 +55,7 @@ function CadastroCategoria() {
         {values.nome}
       </h1>
 
-      <form onSubmit={(infosDoEvento) => {
+      <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
         setCategorias([
           ...categorias,
@@ -68,7 +68,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Nome da categoria"
-          type="text"
+          // type="text"
           name="nome"
           value={values.nome}
           onChange={handleChange}

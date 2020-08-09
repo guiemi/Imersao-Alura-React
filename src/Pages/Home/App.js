@@ -10,6 +10,7 @@ function Home() {
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
       .then((categoriasComVideos) => {
+        console.log(categoriasComVideos[0].video[0]);
         console.log(categoriasComVideos);
         setDadosIniciais(categoriasComVideos);
       })
@@ -28,7 +29,7 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription="O que é Front-end etc"
+                videoDescription={dadosIniciais[0].videos[0].description}
               />
               <Carousel
                 ignoreFirstVideo

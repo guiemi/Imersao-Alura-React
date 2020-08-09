@@ -5,6 +5,7 @@ import useForm from '../../../Hooks/useForm';
 import FormField from '../../../Components/FormField';
 import Button from '../../../Components/Button';
 import videosRepository from '../../../Repositories/videos';
+import categoriasRepository from '../../../Repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
@@ -16,20 +17,31 @@ function CadastroVideo() {
   });
 
   useEffect(() => {
-    
-  })
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
+  }, []);
+
+  console.log(`Categorias: ${categorias}`);
+
   return (
     <PageDefault>
       <h1>Cadastro de Vídeo</h1>
 
       <form onSubmit={(event) => {
         event.preventDefault();
-        // alert('Vídeo cadastrado com sucesso!!!');
+        alert('Vídeo cadastrado com sucesso!!!');
+
+        const categoriaEscolhida = categorias.find((categoria) => {
+          return categoria.titulo === values.categoria;
+        });
 
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');
@@ -53,7 +65,7 @@ function CadastroVideo() {
 
         <FormField
           label="Categoria"
-          name="url"
+          name="categoria"
           value={values.categoria}
           onChange={handleChange}
         />

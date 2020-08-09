@@ -66,16 +66,16 @@ background: #53585D;
         }
       `;
   }
-}
+  }
 `;
 
 function FormField({
-  label, name, type, value, onChange,
+  label, name, type, value, onChange, suggestions,
 }) {
   const fieldId = `id_${name}`;
   const isTypeTextArea = type === 'textarea';
   const tag = isTypeTextArea ? 'textarea' : 'input';
-  const hasValue = value.length;
+  const hasValue = Boolean(value.length);
 
   return (
 
@@ -84,20 +84,27 @@ function FormField({
         htmlFor={fieldId}
       >
 
+        <Input
+          as={tag}
+          type={type}
+          value={value}
+          name={name}
+          hasValue={hasValue}
+          onChange={onChange}
+        />
+
         <Label.Text>
           {label}
           :
         </Label.Text>
+        <datalist>
+          {
+            suggestions.map((suggestion) => {
+              <option value={suggestion} />
+            })
+          }
+        </datalist>
       </Label>
-      <Input
-        as={tag}
-        type={type}
-        value={value}
-        name={name}
-        hasValue={hasValue}
-        onChange={onChange}
-      />
-
     </FormFieldWrapper>
   );
 }
@@ -106,6 +113,10 @@ FormField.defaultProps = {
   type: 'text',
   value: '',
   onChange: () => { },
+  suggestions: [
+    'Front End',
+    'Back End',
+  ],
 };
 
 FormField.propTypes = {
@@ -114,6 +125,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  suggestions: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FormField;
