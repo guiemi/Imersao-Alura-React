@@ -76,6 +76,7 @@ function FormField({
   const isTypeTextArea = type === 'textarea';
   const tag = isTypeTextArea ? 'textarea' : 'input';
   const hasValue = Boolean(value.length);
+  const hasSuggestions = Boolean(suggestions.length);
 
   return (
 
@@ -91,19 +92,27 @@ function FormField({
           name={name}
           hasValue={hasValue}
           onChange={onChange}
+          autoComplete={hasSuggestions ? 'off' : 'on'}
+          list={hasSuggestions ? `suggestionFor_${fieldId}` : undefined}
         />
 
         <Label.Text>
           {label}
           :
         </Label.Text>
-        <datalist>
-          {
-            suggestions.map((suggestion) => {
-              <option value={suggestion} />
-            })
-          }
-        </datalist>
+        {
+          hasSuggestions && (
+            <datalist id={`suggestionFor_${fieldId}`}>
+              {
+                suggestions.map((suggestion) => (
+                  <option value={suggestion} key={`suggestionFor_${fieldId}_option${suggestion}`}>
+                    {suggestion}
+                  </option>
+                ))
+              }
+            </datalist>
+          )
+        }
       </Label>
     </FormFieldWrapper>
   );
@@ -113,10 +122,7 @@ FormField.defaultProps = {
   type: 'text',
   value: '',
   onChange: () => { },
-  suggestions: [
-    'Front End',
-    'Back End',
-  ],
+  suggestions: [],
 };
 
 FormField.propTypes = {
