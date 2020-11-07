@@ -62,7 +62,8 @@ function CadastroCategoria() {
           values,
         ]);
 
-        clearForm(valoresIniciais);
+        // clearForm(valoresIniciais);
+        clearForm();
       }}
       >
 

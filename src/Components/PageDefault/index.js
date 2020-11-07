@@ -10,16 +10,16 @@ const Main = styled.main`
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
-  ${({ paddingAlL }) => css`
-    padding: ${paddingAlL}
+  ${({ paddingAll }) => css`
+    padding: ${paddingAll}
   `}
 `;
 
-function PageDefault({ children, paddingAlL }) {
+function PageDefault({ children, paddingAll }) {
   return (
     <>
       <Menu />
-      <Main paddingAlL={paddingAlL}>
+      <Main paddingAlL={paddingAll}>
         {children}
       </Main>
       <Footer />

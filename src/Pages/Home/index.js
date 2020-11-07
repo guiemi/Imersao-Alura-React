@@ -9,9 +9,9 @@ function Home() {
 
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
-      .then((categoriasComVideos) => {
-        console.log(categoriasComVideos[0].video[0]);
-        console.log(categoriasComVideos);
+      .then(async (categoriasComVideos) => {
+        console.log('TESTE 1:', categoriasComVideos[0].video[0]);
+        console.log('TESTE 2:', categoriasComVideos);
         setDadosIniciais(categoriasComVideos);
       })
       .catch((err) => {
@@ -22,6 +22,7 @@ function Home() {
   return (
     <PageDefault paddingAll={0}>
       {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {
           return (

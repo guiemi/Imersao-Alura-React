@@ -6,7 +6,7 @@ import {
   Route,
   BrowserRouter as Router,
 } from 'react-router-dom';
-import Home from './Pages/Home/App';
+import Home from './Pages/Home';
 import CadastroVideo from './Pages/Cadastro/Video';
 import CadastroCategoria from './Pages/Cadastro/Categoria';
 import About from './Pages/About/about';

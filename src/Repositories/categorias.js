@@ -6,11 +6,10 @@ function getAll() {
   return fetch(`${URL_CATEGORIES}`)
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
-        const resposta = await respostaDoServidor.json();
-        return resposta;
+        return respostaDoServidor.json();
       }
 
-      throw new Error('Não foi possível pegar os dados :(');
+      throw new Error('Não foi possível pegar os dados (erro 1: getAll) :(');
     });
 }
 
@@ -18,11 +17,10 @@ function getAllWithVideos() {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
-        const resposta = await respostaDoServidor.json();
-        return resposta;
+        return respostaDoServidor.json();
       }
 
-      throw new Error('Não foi possível pegar os dados :(');
+      throw new Error('Não foi possível pegar os dados (erro 2: getAllWithVideos) :(');
     });
 }
 
