@@ -8,11 +8,11 @@ function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
 
   useEffect(() => {
-    categoriasRepository.getAllWithVideos()
-      .then(async (categoriasComVideos) => {
-        console.log('TESTE 1:', categoriasComVideos[0].video[0]);
-        console.log('TESTE 2:', categoriasComVideos);
-        setDadosIniciais(categoriasComVideos);
+    categoriasRepository.getAll()
+      .then((categorias) => {
+        // console.log('TESTE 1:', categoriasComVideos[0].video[0]);
+        // console.log('TESTE 2:', categoriasComVideos);
+        setDadosIniciais(categorias);
       })
       .catch((err) => {
         console.log(err.message);

@@ -24,7 +24,7 @@
     "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server:static": "json-server --watch ./src/data/db.json --port 8080",
+    "server:static": "json-server --watch ./src/data/dados_iniciais.json --port 8080",
     "server": "node ./server.js"
   },
   "eslintConfig": {
